@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inventario AJAX</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="form-producto">
+      <h2>Agregar Producto</h2>
+      <input type="text" id="nombre" placeholder="Nombre" required />
+      <input type="number" id="cantidad" placeholder="Cantidad" required />
+      <input type="number" id="precio" placeholder="Precio" required />
+      <button type="submit">Agregar</button>
+    </form>
+
+    <div class="visualizacion">
+      <table id="tabla-inventario">
+        <thead>
+          <tr><th>Producto</th><th>Cantidad</th><th>Precio</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <canvas id="grafica" width="400" height="200"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
